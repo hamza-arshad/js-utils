@@ -2,7 +2,7 @@
   "name": "@calipsa/utils",
   "version": "0.0.1",
   "description": "JavaScript utils",
-  "main": "dist/index.js",
+  "main": "dist",
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest --no-cache",
