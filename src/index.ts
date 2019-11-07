@@ -1,3 +1,6 @@
+import * as date from './date'
+import * as timezone from './timezone'
+
 import Cache from './Cache'
 import CacheCapped from './CacheCapped'
 import delay from './delay'
@@ -11,6 +14,9 @@ import sliceRotate from './sliceRotate'
 import toNearestByStep from './toNearestByStep'
 
 export {
+  date,
+  timezone,
+
   Cache,
   CacheCapped,
   delay,
