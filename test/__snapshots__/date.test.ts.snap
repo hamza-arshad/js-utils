@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Date utils Should fromNow date correctly 1`] = `"a few seconds ago"`;
+
+exports[`Date utils Should fromNow inTwoDays correctly 1`] = `"in 2 days"`;
+
+exports[`Date utils Should fromNow rubbish correctly 1`] = `"N/A"`;
+
+exports[`Date utils Should fromNow str correctly 1`] = `"a few seconds ago"`;
+
+exports[`Date utils Should fromNow tomorrow correctly 1`] = `"tomorrow"`;
+
+exports[`Date utils Should fromNow twoDaysAgo correctly 1`] = `"2 days ago"`;
+
+exports[`Date utils Should fromNow yesterday correctly 1`] = `"yesterday"`;

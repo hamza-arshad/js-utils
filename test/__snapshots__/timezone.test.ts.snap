@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Timezone utils Should work correctly with rubbish data (offsetFormattedLong) 1`] = `null`;
+
+exports[`Timezone utils Should work correctly with rubbish data (offsetFormattedShort) 1`] = `null`;

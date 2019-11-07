@@ -1,0 +1,39 @@
+{
+  "name": "@calipsa/utils",
+  "version": "0.0.1",
+  "description": "JavaScript utils",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest --no-cache",
+    "lint": "eslint './src/**/*.ts'",
+    "build": "rm -rf dist && tsc",
+    "version": "npm run build",
+    "release": "np"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/calipsa/js-utils"
+  },
+  "keywords": [
+    "js",
+    "utils"
+  ],
+  "author": "Anton Veselev",
+  "license": "ISC",
+  "dependencies": {
+    "moment-timezone": "^0.5.27"
+  },
+  "devDependencies": {
+    "@calipsa/eslint-config-typescript": "^1.2.0",
+    "@types/jest": "^24.0.22",
+    "@types/lodash": "^4.14.145",
+    "@types/moment-timezone": "^0.5.12",
+    "eslint": "^6.6.0",
+    "jest": "^24.9.0",
+    "lodash": "^4.17.15",
+    "np": "^5.1.2",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.7.2"
+  }
+}
