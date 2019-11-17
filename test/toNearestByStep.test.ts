@@ -1,30 +1,6 @@
 import { toNearestByStep } from '../src'
 
-const numbers = [
-  1,
-  0,
-  -0,
-  -1,
-  -4.5,
-  10000,
-  Math.sqrt(2),
-  NaN,
-  'string',
-  '5',
-  '-0.4',
-  Number.MAX_SAFE_INTEGER,
-  Number.MIN_SAFE_INTEGER,
-  Number.MAX_VALUE,
-  Number.MIN_VALUE,
-  Number.EPSILON,
-  Infinity,
-  -Infinity,
-  true,
-  false,
-  '',
-  null,
-  undefined,
-]
+import numbers from './data/numbers'
 
 const steps = [
   0.001,
