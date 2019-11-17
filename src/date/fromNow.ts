@@ -9,6 +9,9 @@ const lookup: Lookup = {
   'in a day': 'tomorrow',
 }
 
+/**
+ * A better `fromNow` supporting 'yesterday' & 'tomorrow'
+ */
 export default (...args: Parameters<typeof moment>) => {
   const m = moment(...args)
   if (!m.isValid()) {
