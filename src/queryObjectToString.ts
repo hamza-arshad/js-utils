@@ -10,7 +10,11 @@ interface O<V> {
   [key: string]: V,
 }
 
-export default <V>(obj: Readonly<O<V>>) => {
+export default <V>(obj: null | undefined | Readonly<O<V>>) => {
+  if (obj === undefined || obj === null) {
+    return ''
+  }
+
   const entries = Object.entries(obj)
   const mappedEntries = entries.map(([k, v]) => [k, String(getValue(v))] as const)
   const transformedObj = Object.fromEntries(mappedEntries)
