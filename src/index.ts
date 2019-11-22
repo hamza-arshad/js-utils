@@ -9,6 +9,7 @@ import isNonNegativeInteger from './isNonNegativeInteger'
 import objectToArray from './objectToArray'
 import objectToFunction from './objectToFunction'
 import objectToFunctionWithBind from './objectToFunctionWithBind'
+import queryObjectToString from './queryObjectToString'
 import Singleton from './Singleton'
 import sliceRotate from './sliceRotate'
 import toNearestByStep from './toNearestByStep'
@@ -25,6 +26,7 @@ export {
   objectToArray,
   objectToFunction,
   objectToFunctionWithBind,
+  queryObjectToString,
   Singleton,
   sliceRotate,
   toNearestByStep,

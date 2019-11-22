@@ -22,6 +22,7 @@ import {
   objectToArray,
   objectToFunction,
   objectToFunctionWithBind,
+  queryObjectToString,
   Singleton,
   sliceRotate,
   toNearestByStep,
@@ -29,7 +30,7 @@ import {
 
 import {
   fromNow,
-} from '@calipsa/utils/date'
+} from '@calipsa/utils/dist/date'
 
 import {
   names,
@@ -37,7 +38,7 @@ import {
   offsetFormattedLong,
   offsetFormattedShort,
   suggested,
-} from '@calipsa/utils/timezone'
+} from '@calipsa/utils/dist/timezone'
 
 // ...
 ```
