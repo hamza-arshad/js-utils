@@ -13,7 +13,6 @@ import queryObjectToString from './queryObjectToString'
 import randomId from './randomId'
 import Singleton from './Singleton'
 import sliceRotate from './sliceRotate'
-import timer from './timer'
 import toNearestByStep from './toNearestByStep'
 
 export {
@@ -32,6 +31,5 @@ export {
   randomId,
   Singleton,
   sliceRotate,
-  timer,
   toNearestByStep,
 }
