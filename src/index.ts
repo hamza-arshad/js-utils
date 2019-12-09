@@ -10,6 +10,7 @@ import objectToArray from './objectToArray'
 import objectToFunction from './objectToFunction'
 import objectToFunctionWithBind from './objectToFunctionWithBind'
 import queryObjectToString from './queryObjectToString'
+import randomId from './randomId'
 import Singleton from './Singleton'
 import sliceRotate from './sliceRotate'
 import toNearestByStep from './toNearestByStep'
@@ -27,6 +28,7 @@ export {
   objectToFunction,
   objectToFunctionWithBind,
   queryObjectToString,
+  randomId,
   Singleton,
   sliceRotate,
   toNearestByStep,
