@@ -19,6 +19,8 @@ import {
   delay,
   hasDuplicates,
   isNonNegativeInteger,
+  limitConcurrent,
+  lockAsync,
   objectToArray,
   objectToFunction,
   objectToFunctionWithBind,

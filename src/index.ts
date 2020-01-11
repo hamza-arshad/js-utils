@@ -6,6 +6,8 @@ import CacheCapped from './CacheCapped'
 import delay from './delay'
 import hasDuplicates from './hasDuplicates'
 import isNonNegativeInteger from './isNonNegativeInteger'
+import limitConcurrent from './limitConcurrent'
+import lockAsync from './lockAsync'
 import objectToArray from './objectToArray'
 import objectToFunction from './objectToFunction'
 import objectToFunctionWithBind from './objectToFunctionWithBind'
@@ -24,6 +26,8 @@ export {
   delay,
   hasDuplicates,
   isNonNegativeInteger,
+  limitConcurrent,
+  lockAsync,
   objectToArray,
   objectToFunction,
   objectToFunctionWithBind,
