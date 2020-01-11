@@ -1,14 +1,14 @@
 import isNonNegativeInteger from './isNonNegativeInteger'
 
-type O = Readonly<{
+interface Obj {
   [k: number]: any,
-}>
+}
 
 /**
  * Takes all values matching non-negative integer keys in an object
  * and puts them in an array
  */
-export default <Obj extends O, V extends Obj[keyof Obj]>(o: Obj) => {
+export default <O extends Readonly<Obj>, V extends O[keyof O]>(o: O) => {
   const indices = Object.keys(o)
     .map(Number)
     .filter(isNonNegativeInteger)
