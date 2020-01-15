@@ -5,12 +5,14 @@ import Cache from './Cache'
 import CacheCapped from './CacheCapped'
 import delay from './delay'
 import hasDuplicates from './hasDuplicates'
+import isNaturalNumber from './isNaturalNumber'
 import isNonNegativeInteger from './isNonNegativeInteger'
 import limitConcurrent from './limitConcurrent'
 import lockAsync from './lockAsync'
 import objectToArray from './objectToArray'
 import objectToFunction from './objectToFunction'
 import objectToFunctionWithBind from './objectToFunctionWithBind'
+import ordinal from './ordinal'
 import queryObjectToString from './queryObjectToString'
 import randomId from './randomId'
 import Singleton from './Singleton'
@@ -25,12 +27,14 @@ export {
   CacheCapped,
   delay,
   hasDuplicates,
+  isNaturalNumber,
   isNonNegativeInteger,
   limitConcurrent,
   lockAsync,
   objectToArray,
   objectToFunction,
   objectToFunctionWithBind,
+  ordinal,
   queryObjectToString,
   randomId,
   Singleton,

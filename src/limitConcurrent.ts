@@ -1,3 +1,4 @@
+import isNaturalNumber from './isNaturalNumber'
 import lockAsync from './lockAsync'
 
 type Func<Args extends any[], RetVal> = (...args: Args) => Promise<RetVal>
@@ -12,7 +13,7 @@ export default <R, A extends any[], F extends Func<A, R>>(func: F, numConcurrent
     return func
   }
 
-  if (!Number.isInteger(numConcurrent) || numConcurrent < 1) {
+  if (!isNaturalNumber(numConcurrent)) {
     throw new Error('numConcurrent should be a natural number')
   }
 
