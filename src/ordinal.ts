@@ -1,8 +1,11 @@
 import isNaturalNumber from './isNaturalNumber'
 
+const got = (i: any) =>
+  typeof i === 'string' ? JSON.stringify(i) : i
+
 export default (i: number) => {
   if (!isNaturalNumber(i)) {
-    throw new Error(`Number must be a natural number. Instead got: ${i}`)
+    throw new Error(`Number must be a natural number. Instead got: ${got(i)}`)
   }
 
   const j = i % 10
