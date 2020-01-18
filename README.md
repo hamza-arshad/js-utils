@@ -25,6 +25,7 @@ import {
   objectToArray,
   objectToFunction,
   objectToFunctionWithBind,
+  objectToMap,
   ordinal,
   queryObjectToString,
   randomId,

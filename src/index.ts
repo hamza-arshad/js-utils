@@ -12,6 +12,7 @@ import lockAsync from './lockAsync'
 import objectToArray from './objectToArray'
 import objectToFunction from './objectToFunction'
 import objectToFunctionWithBind from './objectToFunctionWithBind'
+import objectToMap from './objectToMap'
 import ordinal from './ordinal'
 import queryObjectToString from './queryObjectToString'
 import randomId from './randomId'
@@ -34,6 +35,7 @@ export {
   objectToArray,
   objectToFunction,
   objectToFunctionWithBind,
+  objectToMap,
   ordinal,
   queryObjectToString,
   randomId,
