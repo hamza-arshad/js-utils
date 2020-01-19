@@ -12,6 +12,6 @@ describe('objectToMap', () => {
     for (const [k, v] of Object.entries(o)) {
       expect(map.get(k)).toBe(v)
     }
-    expect(map.has('absentKey')).toBe(true)
+    expect(map.has('absentKey')).toBe(false)
   })
 })
