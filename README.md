@@ -17,6 +17,7 @@ import {
   Cache,
   CacheCapped,
   delay,
+  getObjectPaths,
   hasDuplicates,
   isNaturalNumber,
   isNonNegativeInteger,

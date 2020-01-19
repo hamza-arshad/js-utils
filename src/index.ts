@@ -4,6 +4,7 @@ import * as timezone from './timezone'
 import Cache from './Cache'
 import CacheCapped from './CacheCapped'
 import delay from './delay'
+import getObjectPaths from './getObjectPaths'
 import hasDuplicates from './hasDuplicates'
 import isNaturalNumber from './isNaturalNumber'
 import isNonNegativeInteger from './isNonNegativeInteger'
@@ -27,6 +28,7 @@ export {
   Cache,
   CacheCapped,
   delay,
+  getObjectPaths,
   hasDuplicates,
   isNaturalNumber,
   isNonNegativeInteger,
