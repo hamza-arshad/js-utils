@@ -2,12 +2,15 @@
   "name": "@calipsa/utils",
   "version": "0.1.6",
   "description": "JavaScript utils",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "dist/es/index.d.ts",
+  "module": "dist/es/index.js",
+  "main": "dist/commonjs/index.js",
   "scripts": {
     "test": "jest --no-cache",
     "lint": "eslint './src/**/*.ts'",
-    "build": "rm -rf dist && tsc",
+    "build:commonjs": "tsc --outDir dist/commonjs",
+    "build:es": "tsc -m ESNext --outDir dist/es",
+    "build": "rm -rf dist && run-p -c \"build:*\"",
     "version": "npm run build",
     "release": "np"
   },
@@ -33,6 +36,7 @@
     "jest": "^24.9.0",
     "lodash": "^4.17.15",
     "np": "^5.2.1",
+    "npm-run-all": "^4.1.5",
     "ts-jest": "^24.3.0",
     "typescript": "^3.7.4"
   }
