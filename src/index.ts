@@ -17,6 +17,7 @@ import objectToMap from './objectToMap'
 import ordinal from './ordinal'
 import queryObjectToString from './queryObjectToString'
 import racePromises from './racePromises'
+import racePromisesWithPositions from './racePromisesWithPositions'
 import randomId from './randomId'
 import Singleton from './Singleton'
 import sliceRotate from './sliceRotate'
@@ -42,6 +43,7 @@ export {
   ordinal,
   queryObjectToString,
   racePromises,
+  racePromisesWithPositions,
   randomId,
   Singleton,
   sliceRotate,
