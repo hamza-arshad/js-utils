@@ -1,5 +1,3 @@
-import { range } from 'lodash'
-
 import {
   delay,
   racePromises,
