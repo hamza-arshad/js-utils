@@ -16,6 +16,7 @@ import objectToFunctionWithBind from './objectToFunctionWithBind'
 import objectToMap from './objectToMap'
 import ordinal from './ordinal'
 import queryObjectToString from './queryObjectToString'
+import racePromises from './racePromises'
 import randomId from './randomId'
 import Singleton from './Singleton'
 import sliceRotate from './sliceRotate'
@@ -40,6 +41,7 @@ export {
   objectToMap,
   ordinal,
   queryObjectToString,
+  racePromises,
   randomId,
   Singleton,
   sliceRotate,
