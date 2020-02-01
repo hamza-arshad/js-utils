@@ -1,3 +1,5 @@
+import mapValues from 'lodash/mapValues'
+
 function getValue<T extends {}>(val: T) {
   if (val instanceof Date) {
     return val.toISOString()
@@ -15,9 +17,7 @@ export default <V>(obj: null | undefined | Readonly<O<V>>) => {
     return ''
   }
 
-  const entries = Object.entries(obj)
-  const mappedEntries = entries.map(([k, v]) => [k, String(getValue(v))] as const)
-  const transformedObj = Object.fromEntries(mappedEntries)
+  const transformedObj = mapValues(obj, getValue)
   const params = new URLSearchParams(transformedObj)
   return params.toString()
 }
