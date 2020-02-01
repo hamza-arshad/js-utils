@@ -14,7 +14,8 @@ export default <R, A extends any[], F extends Func<A, R>>(func: F, numConcurrent
   }
 
   if (!isNaturalNumber(numConcurrent)) {
-    throw new Error('numConcurrent should be a natural number')
+    const msg = 'numConcurrent should be a natural number or Infinity'
+    throw new Error(`${msg}. Instead got: ${numConcurrent}`)
   }
 
   if (numConcurrent === 1) {
