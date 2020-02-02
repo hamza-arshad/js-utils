@@ -37,18 +37,6 @@ import {
   toNearestByStep,
 } from '@calipsa/utils'
 
-import {
-  fromNow,
-} from '@calipsa/utils/dist/date'
-
-import {
-  names,
-  offset,
-  offsetFormattedLong,
-  offsetFormattedShort,
-  suggested,
-} from '@calipsa/utils/dist/timezone'
-
 // ...
 ```
 

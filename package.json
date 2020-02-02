@@ -28,9 +28,7 @@
   "author": "Anton Veselev",
   "license": "ISC",
   "dependencies": {
-    "lodash": "^4.17.15",
-    "moment-timezone": "^0.5.27",
-    "@types/moment-timezone": "^0.5.12"
+    "lodash": "^4.17.15"
   },
   "devDependencies": {
     "@calipsa/eslint-config-typescript": "^1.2.1",
