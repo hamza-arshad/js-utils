@@ -14,8 +14,6 @@ yarn add @calipsa/utils
 ## Usage
 ```javascript
 import {
-  Cache,
-  CacheCapped,
   delay,
   getObjectPaths,
   hasDuplicates,
@@ -32,7 +30,6 @@ import {
   racePromises,
   racePromisesWithPositions,
   randomId,
-  Singleton,
   sliceRotate,
   toNearestByStep,
 } from '@calipsa/utils'
