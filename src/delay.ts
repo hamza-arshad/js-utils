@@ -1,5 +1,5 @@
 /**
- * Promisified setTimeout
+ * Promisified `setTimeout`
  */
 export default (ms: number) =>
   new Promise<void>(resolve => {

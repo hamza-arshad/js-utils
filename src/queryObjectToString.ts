@@ -1,4 +1,5 @@
 import mapValues from 'lodash/mapValues'
+import isNil from 'lodash/isNil'
 
 function getValue<T extends {}>(val: T) {
   if (val instanceof Date) {
@@ -13,7 +14,7 @@ interface O<V> {
 }
 
 export default <V>(obj: null | undefined | Readonly<O<V>>) => {
-  if (obj === undefined || obj === null) {
+  if (isNil(obj)) {
     return ''
   }
 

@@ -1,5 +1,3 @@
-import Cache from './Cache'
-import CacheCapped from './CacheCapped'
 import delay from './delay'
 import getObjectPaths from './getObjectPaths'
 import hasDuplicates from './hasDuplicates'
@@ -16,13 +14,10 @@ import queryObjectToString from './queryObjectToString'
 import racePromises from './racePromises'
 import racePromisesWithPositions from './racePromisesWithPositions'
 import randomId from './randomId'
-import Singleton from './Singleton'
 import sliceRotate from './sliceRotate'
 import toNearestByStep from './toNearestByStep'
 
 export {
-  Cache,
-  CacheCapped,
   delay,
   getObjectPaths,
   hasDuplicates,
@@ -39,7 +34,6 @@ export {
   racePromises,
   racePromisesWithPositions,
   randomId,
-  Singleton,
   sliceRotate,
   toNearestByStep,
 }
