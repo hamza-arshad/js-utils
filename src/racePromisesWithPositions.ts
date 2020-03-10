@@ -22,15 +22,17 @@ export default <T>(promises: readonly Promise<T>[], limit = Infinity) => {
     return racePromises(promises).then(castArray)
   }
 
-  return new Promise<number[]>(resolve => {
+  return new Promise<number[]>((resolve, reject) => {
     const positions: number[] = []
     for (let i = 0; i < len; ++i) {
-      promises[i].then(() => {
-        positions.push(i)
-        if (positions.length === limit) {
-          resolve(positions.slice())
-        }
-      })
+      promises[i]
+        .then(() => {
+          positions.push(i)
+          if (positions.length === limit) {
+            resolve(positions.slice())
+          }
+        })
+        .catch(reject)
     }
   })
 }
