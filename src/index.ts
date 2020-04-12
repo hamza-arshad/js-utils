@@ -5,6 +5,7 @@ import isNaturalNumber from './isNaturalNumber'
 import isNonNegativeInteger from './isNonNegativeInteger'
 import limitConcurrent from './limitConcurrent'
 import lockAsync from './lockAsync'
+import memoizeWeak from './memoizeWeak'
 import objectToArray from './objectToArray'
 import objectToFunction from './objectToFunction'
 import objectToFunctionWithBind from './objectToFunctionWithBind'
@@ -25,6 +26,7 @@ export {
   isNonNegativeInteger,
   limitConcurrent,
   lockAsync,
+  memoizeWeak,
   objectToArray,
   objectToFunction,
   objectToFunctionWithBind,

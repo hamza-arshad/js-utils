@@ -21,6 +21,7 @@ import {
   isNonNegativeInteger,
   limitConcurrent,
   lockAsync,
+  memoizeWeak,
   objectToArray,
   objectToFunction,
   objectToFunctionWithBind,
