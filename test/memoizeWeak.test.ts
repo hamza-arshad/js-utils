@@ -24,6 +24,16 @@ describe('memoizeWeak', () => {
     expect(res1).toBe(res2)
   })
 
+  it('Should throw when the argument is a primitive', () => {
+    const double = (n: number) =>
+      n * 2
+
+    // @ts-ignore
+    const memoizedDouble = memoizeWeak(double)
+    
+    expect(() => memoizedDouble(42)).toThrowErrorMatchingSnapshot()
+  })
+
   it('Should not recompute value multiple times', () => {
     let computed = 0
 
