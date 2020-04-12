@@ -13,6 +13,9 @@ interface O<V> {
   [key: string]: V,
 }
 
+/**
+ * Converts object to search params string
+ */
 export default <V>(obj: null | undefined | Readonly<O<V>>) => {
   if (isNil(obj)) {
     return ''
