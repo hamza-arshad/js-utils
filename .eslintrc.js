@@ -4,4 +4,8 @@ module.exports = {
   extends: [
     '@calipsa/eslint-config-typescript',
   ],
+
+  rules: {
+    'lodash/import-scope': [2, 'method'],
+  },
 }
