@@ -14,17 +14,7 @@ jobs:
         with:
           node-version: 12
       - run: npm ci
-      - run: npm run lint:js
-
-  stylelint:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-      - run: npm ci
-      - run: npm run lint:css
+      - run: npm run lint
 
   test:
     runs-on: ubuntu-latest
