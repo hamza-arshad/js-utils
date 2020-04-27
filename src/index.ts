@@ -1,41 +1,19 @@
-import delay from './delay'
-import getObjectPaths from './getObjectPaths'
-import hasDuplicates from './hasDuplicates'
-import isNaturalNumber from './isNaturalNumber'
-import isNonNegativeInteger from './isNonNegativeInteger'
-import limitConcurrent from './limitConcurrent'
-import lockAsync from './lockAsync'
-import memoizeWeak from './memoizeWeak'
-import objectToArray from './objectToArray'
-import objectToFunction from './objectToFunction'
-import objectToFunctionWithBind from './objectToFunctionWithBind'
-import objectToMap from './objectToMap'
-import ordinal from './ordinal'
-import queryObjectToString from './queryObjectToString'
-import racePromises from './racePromises'
-import racePromisesWithPositions from './racePromisesWithPositions'
-import randomId from './randomId'
-import sliceRotate from './sliceRotate'
-import toNearestByStep from './toNearestByStep'
-
-export {
-  delay,
-  getObjectPaths,
-  hasDuplicates,
-  isNaturalNumber,
-  isNonNegativeInteger,
-  limitConcurrent,
-  lockAsync,
-  memoizeWeak,
-  objectToArray,
-  objectToFunction,
-  objectToFunctionWithBind,
-  objectToMap,
-  ordinal,
-  queryObjectToString,
-  racePromises,
-  racePromisesWithPositions,
-  randomId,
-  sliceRotate,
-  toNearestByStep,
-}
+export { default as delay } from './delay'
+export { default as getObjectPaths } from './getObjectPaths'
+export { default as hasDuplicates } from './hasDuplicates'
+export { default as isNaturalNumber } from './isNaturalNumber'
+export { default as isNonNegativeInteger } from './isNonNegativeInteger'
+export { default as limitConcurrent } from './limitConcurrent'
+export { default as lockAsync } from './lockAsync'
+export { default as memoizeWeak } from './memoizeWeak'
+export { default as objectToArray } from './objectToArray'
+export { default as objectToFunction } from './objectToFunction'
+export { default as objectToFunctionWithBind } from './objectToFunctionWithBind'
+export { default as objectToMap } from './objectToMap'
+export { default as ordinal } from './ordinal'
+export { default as queryObjectToString } from './queryObjectToString'
+export { default as racePromises } from './racePromises'
+export { default as racePromisesWithPositions } from './racePromisesWithPositions'
+export { default as randomId } from './randomId'
+export { default as sliceRotate } from './sliceRotate'
+export { default as toNearestByStep } from './toNearestByStep'
