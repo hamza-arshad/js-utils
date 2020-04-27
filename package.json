@@ -15,7 +15,7 @@
     "build:es": "tsc -m ESNext --outDir es",
     "build": "rm -rf dist && run-p -c \"build:*\"",
     "version": "npm run build",
-    "release": "np"
+    "release": "np --yolo --no-publish"
   },
   "repository": {
     "type": "git",
