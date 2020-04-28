@@ -19,13 +19,12 @@ export default (
   const getPaths = (o: RecursiveObject<Primitive>): string[][] =>
     Object.keys(o)
       .filter(k => !ignoreIf(o[k], k))
-      .map(k => {
+      .flatMap(k => {
         const v = o[k]
         return !isObjectLike(v) || stopIf(v, k)
           ? [[k]]
           : getPaths(v as RecursiveObject<Primitive>).map(newKeys => [k, ...newKeys])
       })
-      .flat()
 
   return getPaths(obj)
 }
