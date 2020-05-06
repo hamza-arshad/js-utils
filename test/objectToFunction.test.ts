@@ -16,4 +16,20 @@ describe('objectToFunction', () => {
     // @ts-ignore
     expect(func('absentkey')).toBe(undefined)
   })
+
+  it('Should work for arrays', () => {
+    const arr = [
+      'foo',
+      'bar',
+      'baz',
+      'quux',
+    ] as const
+
+    const func = objectToFunction(arr)
+    for (let i = 0; i < arr.length; ++i) {
+      expect(func(i)).toBe(arr[i])
+    }
+    // @ts-ignore
+    expect(func('absentkey')).toBe(undefined)
+  })
 })
