@@ -1,6 +1,6 @@
 {
   "name": "@calipsa/utils",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "description": "JavaScript utils",
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
