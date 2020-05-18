@@ -1,4 +1,4 @@
-import isNaturalNumber from './isNaturalNumber'
+import isPositiveInteger from './isPositiveInteger'
 import lockAsync from './lockAsync'
 
 type Func<Args extends any[], RetVal> = (...args: Args) => Promise<RetVal>
@@ -13,8 +13,8 @@ export default <R, A extends any[], F extends Func<A, R>>(func: F, numConcurrent
     return func
   }
 
-  if (!isNaturalNumber(numConcurrent)) {
-    const msg = 'numConcurrent should be a natural number or Infinity'
+  if (!isPositiveInteger(numConcurrent)) {
+    const msg = 'numConcurrent should be a positive integer or Infinity'
     throw new Error(`${msg}. Instead got: ${numConcurrent}`)
   }
 

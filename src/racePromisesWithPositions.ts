@@ -1,6 +1,6 @@
 import castArray from 'lodash/castArray'
 
-import isNaturalNumber from './isNaturalNumber'
+import isPositiveInteger from './isPositiveInteger'
 import racePromises from './racePromises'
 
 /**
@@ -14,8 +14,8 @@ export default <T>(promises: readonly Promise<T>[], limit = Infinity) => {
     limit = len
   }
 
-  if (!isNaturalNumber(limit) && limit !== Infinity) {
-    throw new Error(`limit should be a natural number or Infinity. Instead got: ${limit}`)
+  if (!isPositiveInteger(limit) && limit !== Infinity) {
+    throw new Error(`limit should be a positive integer or Infinity. Instead got: ${limit}`)
   }
 
   if (limit === 1) {

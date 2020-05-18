@@ -1,6 +1,12 @@
+import isPositiveInteger from './isPositiveInteger'
+
+type FuncType = typeof isPositiveInteger
+
 /**
- * Checks if a value is a natural number,
- * i.e. is an integer greater than zero
+ * @deprecated use isPositiveInteger
  */
-export default (num: any): num is number =>
-  Number.isInteger(num) && num > 0
+export default (...args: Parameters<FuncType>): ReturnType<FuncType> => {
+  // eslint-disable-next-line no-console
+  console.warn('isNaturalNumber is deprecated. Use isPositiveInteger instead.')
+  return isPositiveInteger(...args)
+}

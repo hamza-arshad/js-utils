@@ -208,10 +208,10 @@ exports[`ordinal Should ordinal(103) correctly 1`] = `"103rd"`;
 
 exports[`ordinal Should ordinal(104) correctly 1`] = `"104th"`;
 
-exports[`ordinal Should throw on ordinal(-2) 1`] = `"Number must be a natural number. Instead got: -2"`;
+exports[`ordinal Should throw on ordinal(-2) 1`] = `"Number must be a positive integer. Instead got: -2"`;
 
-exports[`ordinal Should throw on ordinal(0) 1`] = `"Number must be a natural number. Instead got: 0"`;
+exports[`ordinal Should throw on ordinal(0) 1`] = `"Number must be a positive integer. Instead got: 0"`;
 
-exports[`ordinal Should throw on ordinal(3.5) 1`] = `"Number must be a natural number. Instead got: 3.5"`;
+exports[`ordinal Should throw on ordinal(3.5) 1`] = `"Number must be a positive integer. Instead got: 3.5"`;
 
-exports[`ordinal Should throw on ordinal(Infinity) 1`] = `"Number must be a natural number. Instead got: Infinity"`;
+exports[`ordinal Should throw on ordinal(Infinity) 1`] = `"Number must be a positive integer. Instead got: Infinity"`;

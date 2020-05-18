@@ -17,7 +17,7 @@ import {
   delay,
   getObjectPaths,
   hasDuplicates,
-  isNaturalNumber,
+  isPositiveInteger,
   isNonNegativeInteger,
   limitConcurrent,
   lockAsync,

@@ -1,4 +1,4 @@
-import isNaturalNumber from './isNaturalNumber'
+import isPositiveInteger from './isPositiveInteger'
 
 const got = (i: any) =>
   typeof i === 'string' ? JSON.stringify(i) : i
@@ -21,8 +21,8 @@ function getOrdinalSuffix(i: number) {
 }
 
 export default (i: number) => {
-  if (!isNaturalNumber(i)) {
-    throw new Error(`Number must be a natural number. Instead got: ${got(i)}`)
+  if (!isPositiveInteger(i)) {
+    throw new Error(`Number must be a positive integer. Instead got: ${got(i)}`)
   }
 
   return `${i}${getOrdinalSuffix(i)}`
