@@ -10,6 +10,7 @@
  * // not recomputed, instead taken from the function's cache
  * const b = memoizedMultBy3(5)
  */
+// eslint-disable-next-line @typescript-eslint/ban-types
 export default <A extends object, R, F extends (arg: A) => R>(func: F): F => {
   const cache = new WeakMap<A, R>()
   return (arg => {

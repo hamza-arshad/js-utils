@@ -1,7 +1,7 @@
 import mapValues from 'lodash/mapValues'
 import isNil from 'lodash/isNil'
 
-function getValue<T extends {}>(val: T) {
+function getValue<T extends unknown>(val: T) {
   if (val instanceof Date) {
     return val.toISOString()
   }
@@ -9,14 +9,10 @@ function getValue<T extends {}>(val: T) {
   return String(val)
 }
 
-interface O<V> {
-  [key: string]: V,
-}
-
 /**
  * Converts object to search params string
  */
-export default <V>(obj: null | undefined | Readonly<O<V>>) => {
+export default (obj: null | undefined | Readonly<Record<string, any>>) => {
   if (isNil(obj)) {
     return ''
   }

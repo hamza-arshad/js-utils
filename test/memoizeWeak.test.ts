@@ -31,6 +31,7 @@ describe('memoizeWeak', () => {
     // @ts-ignore
     const memoizedDouble = memoizeWeak(double)
     
+    // @ts-expect-error
     expect(() => memoizedDouble(42)).toThrowErrorMatchingSnapshot()
   })
 

@@ -3,6 +3,7 @@ import isObjectLike from 'lodash/isObjectLike'
 
 type Primitive = number | string | boolean | bigint | symbol
 
+// eslint-disable-next-line no-use-before-define
 type Recursive<T> = T | RecursiveObject<T>
 
 interface RecursiveObject<T> {
