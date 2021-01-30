@@ -6,7 +6,7 @@ import racePromises from './racePromises'
 /**
  * Race promises and get the winner's index ordered by their finishing position
  */
-export default <T>(promises: readonly Promise<T>[], limit = Infinity) => {
+export default <T>(promises: readonly Promise<T>[], limit = Number.POSITIVE_INFINITY) => {
   const len = promises.length
 
   if (limit > len) {
@@ -14,7 +14,7 @@ export default <T>(promises: readonly Promise<T>[], limit = Infinity) => {
     limit = len
   }
 
-  if (!isPositiveInteger(limit) && limit !== Infinity) {
+  if (!isPositiveInteger(limit) && limit !== Number.POSITIVE_INFINITY) {
     throw new Error(`limit should be a positive integer or Infinity. Instead got: ${limit}`)
   }
 

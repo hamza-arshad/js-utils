@@ -8,8 +8,11 @@ type Resolve<RetVal> = (value?: RetVal | PromiseLike<RetVal> | undefined) => voi
 /**
  * Restricts the function to run only `numConcurrent` instances at the same time
  */
-export default <R, A extends any[], F extends Func<A, R>>(func: F, numConcurrent = Infinity): F => {
-  if (numConcurrent === Infinity) {
+export default <R, A extends any[], F extends Func<A, R>>(
+  func: F,
+  numConcurrent = Number.POSITIVE_INFINITY,
+): F => {
+  if (numConcurrent === Number.POSITIVE_INFINITY) {
     return func
   }
 
