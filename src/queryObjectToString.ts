@@ -1,5 +1,7 @@
 import mapValues from 'lodash/mapValues'
 import isNil from 'lodash/isNil'
+import isUndefined from 'lodash/isUndefined'
+import omitBy from 'lodash/omitBy'
 
 function getValue<T extends unknown>(val: T) {
   if (val instanceof Date) {
@@ -17,7 +19,8 @@ export default (obj: null | undefined | Readonly<Record<string, any>>) => {
     return ''
   }
 
-  const transformedObj = mapValues(obj, getValue)
+  const objWithoutUndefined = omitBy(obj, isUndefined)
+  const transformedObj = mapValues(objWithoutUndefined, getValue)
   const params = new URLSearchParams(transformedObj)
   return params.toString()
 }
