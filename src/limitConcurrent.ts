@@ -30,6 +30,7 @@ export default <R, A extends any[], F extends Func<A, R>>(
   const queue: [A, Resolve<R>][] = [] // queue of args
 
   function attach(p: Promise<any>) {
+    // eslint-disable-next-line promise/catch-or-return
     p.then(() => {
       pool.delete(p)
       const o = queue.shift()
