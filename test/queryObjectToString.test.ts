@@ -17,6 +17,9 @@ const objects = {
     emptystring: '',
     d: new Date('2019-11-22T22:17:17.771Z'),
     ud: undefined,
+    n: null,
+    re: /abc/,
+    arr: ['x', 'y', 'z'],
   },
 
   'multicase object': {
